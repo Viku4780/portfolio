@@ -7,12 +7,13 @@ import Services from './components/Services/Services'
 import MyWork from './components/MyWork/MyWork'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import './App.css'
 
 
 function App() {
 
   return (
-   <div>
+   <div className='app'>
     <Navbar />
     <Hero />
     <About />

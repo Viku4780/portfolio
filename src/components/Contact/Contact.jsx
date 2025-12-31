@@ -6,7 +6,7 @@ import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 // eb37cdc8-adc4-4864-b661-e5566d3bd336
 const Contact = () => {
-    
+
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -57,12 +57,21 @@ const Contact = () => {
                 </div>
 
                 <form onSubmit={onSubmit} className='contact-right'>
-                    <label htmlFor=""> Your Name</label>
-                    <input type="text" placeholder='Enter your name' name='name' />
-                    <label htmlFor="">Your Email</label>
-                    <input type="email" placeholder='Enter your email' name='email' />
-                    <label htmlFor="">Write your message here</label>
-                    <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
+                    <label htmlFor="">
+                        <span>Your Name</span>
+                        <input type="text" placeholder='Enter your name' name='name' />
+                    </label>
+
+                    <label htmlFor="">
+                        <span>Your Email</span>
+                        <input type="email" placeholder='Enter your email' name='email' />
+                    </label>
+
+                    <label htmlFor="">
+                        <span>Write your message here</span>
+                        <textarea name="message" rows="8" placeholder='Enter your message'></textarea>
+                    </label>
+                    
                     <button type='submit' className='contact-submit'>Submit now</button>
                 </form>
 
